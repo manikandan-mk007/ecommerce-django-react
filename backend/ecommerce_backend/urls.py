@@ -30,5 +30,5 @@ urlpatterns = [
     path("api/reports/", include("reports.urls")),
 ]
 
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# Serve uploaded product images on Render also
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
