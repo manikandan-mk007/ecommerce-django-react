@@ -1,0 +1,85 @@
+# =========================
+# Python / Django Backend
+# =========================
+
+# Virtual environment
+backend/venv/
+venv/
+.env
+backend/.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+backend/db.sqlite3
+backend/*.sqlite3
+backend/media/
+backend/staticfiles/
+
+# Migrations cache files
+*/migrations/__pycache__/
+
+# Logs
+*.log
+
+# Environment / local config
+.env.local
+.env.development
+.env.production
+
+
+# =========================
+# React / Vite Frontend
+# =========================
+
+# Node modules
+frontend/node_modules/
+node_modules/
+
+# Build output
+frontend/dist/
+dist/
+
+# Vite env files
+frontend/.env
+frontend/.env.local
+frontend/.env.development
+frontend/.env.production
+
+# Cache
+frontend/.vite/
+.vite/
+
+
+# =========================
+# IDE / OS Files
+# =========================
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
+
+# Windows
+desktop.ini
+
+# npm/yarn/pnpm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# =========================
+# Git / Deployment Safety
+# =========================
+
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx

@@ -1,0 +1,293 @@
+.admin-layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  background: var(--cream);
+}
+
+.admin-sidebar {
+  background: var(--dark);
+  color: var(--white);
+  padding: 22px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.admin-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 34px;
+}
+
+.admin-logo span {
+  width: 42px;
+  height: 42px;
+  background: var(--primary);
+  color: var(--dark);
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  font-weight: 900;
+}
+
+.admin-logo strong {
+  color: var(--primary);
+}
+
+.admin-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-menu a {
+  color: #fff8e1;
+  padding: 13px 14px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 800;
+}
+
+.admin-menu a.active,
+.admin-menu a:hover {
+  background: var(--primary);
+  color: var(--dark);
+}
+
+.logout-btn {
+  width: calc(100% - 44px);
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  border: none;
+  background: #5d4037;
+  color: var(--white);
+  padding: 13px 14px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 800;
+}
+
+.admin-main {
+  padding: 28px;
+}
+
+.admin-topbar {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.admin-topbar h2 {
+  margin: 0;
+  font-size: 32px;
+  color: var(--dark);
+}
+
+.admin-topbar p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.stat-card {
+  background: var(--white);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-top: 5px solid var(--primary);
+}
+
+.stat-icon {
+  width: 54px;
+  height: 54px;
+  background: #fff8e1;
+  color: var(--dark);
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  font-size: 24px;
+}
+
+.stat-card p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.stat-card h3 {
+  margin: 5px 0 0;
+  color: var(--dark);
+  font-size: 30px;
+}
+
+.admin-panel-card,
+.admin-form-card,
+.admin-table-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.admin-panel-card {
+  margin-top: 24px;
+}
+
+.admin-panel-card h3,
+.admin-form-card h3,
+.admin-table-card h3 {
+  margin-top: 0;
+  color: var(--dark);
+}
+
+.admin-panel-card p {
+  color: var(--muted);
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 370px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.admin-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-form-card label {
+  font-weight: 800;
+  color: var(--dark);
+  margin-top: 5px;
+}
+
+.admin-form-card input,
+.admin-form-card textarea,
+.admin-form-card select {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 13px;
+  outline: none;
+  font-weight: 700;
+  color: var(--dark);
+  background: var(--white);
+}
+
+.admin-form-card textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check-label input {
+  width: auto;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #fff8e1;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  color: var(--dark);
+}
+
+th {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+td {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.table-img {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.action-row {
+  display: flex;
+  gap: 8px;
+}
+
+.action-row button {
+  border: none;
+  background: #fff8e1;
+  color: var(--dark);
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.action-row button:hover {
+  background: var(--primary);
+}
+
+@media (max-width: 1100px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    position: relative;
+    height: auto;
+  }
+
+  .logout-btn {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: auto;
+    margin-top: 18px;
+  }
+
+  .admin-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

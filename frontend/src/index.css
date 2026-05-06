@@ -1,0 +1,120 @@
+:root {
+  --primary: #ffc107;
+  --primary-soft: #ffd54f;
+  --dark: #3e2723;
+  --cream: #fff3e0;
+  --white: #ffffff;
+  --text: #2b1b14;
+  --muted: #7b5e57;
+  --border: #f3d59b;
+  --danger: #d32f2f;
+  --success: #2e7d32;
+  --shadow: 0 14px 35px rgba(62, 39, 35, 0.12);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.page-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.primary-btn {
+  border: none;
+  background: var(--primary);
+  color: var(--dark);
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(255, 193, 7, 0.35);
+  transition: 0.25s ease;
+}
+
+.primary-btn:hover {
+  background: var(--primary-soft);
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--dark);
+  padding: 11px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.secondary-btn:hover {
+  background: #fff8e1;
+}
+
+.danger-btn {
+  border: none;
+  background: #ffebee;
+  color: var(--danger);
+  padding: 9px 13px;
+  border-radius: 12px;
+  font-weight: 800;
+}
+
+.success-badge {
+  background: #e8f5e9;
+  color: var(--success);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.danger-badge {
+  background: #ffebee;
+  color: var(--danger);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.empty-box {
+  background: var(--white);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 35px;
+  text-align: center;
+  color: var(--muted);
+  box-shadow: var(--shadow);
+}
+
+.loading-text {
+  padding: 30px;
+  text-align: center;
+  font-weight: 800;
+  color: var(--dark);
+}

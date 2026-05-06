@@ -1,0 +1,110 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 193, 7, 0.38), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(255, 213, 79, 0.28), transparent 30%),
+    linear-gradient(135deg, #fff3e0 0%, #fff8e1 100%);
+}
+
+.auth-card {
+  width: min(460px, 100%);
+  background: rgba(255, 255, 255, 0.96);
+  padding: 38px;
+  border-radius: 30px;
+  box-shadow: 0 24px 60px rgba(62, 39, 35, 0.16);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--primary-soft));
+}
+
+.auth-logo {
+  width: 62px;
+  height: 62px;
+  background: var(--primary);
+  color: var(--dark);
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  font-weight: 900;
+  font-size: 28px;
+  margin-bottom: 22px;
+  box-shadow: 0 12px 25px rgba(255, 193, 7, 0.35);
+}
+
+.auth-card h1 {
+  color: var(--dark);
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+
+.auth-card p {
+  color: var(--muted);
+  margin: 10px 0 26px;
+  line-height: 1.6;
+}
+
+.auth-card label {
+  display: block;
+  color: var(--dark);
+  font-weight: 900;
+  margin: 15px 0 8px;
+}
+
+.auth-card input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 14px 15px;
+  outline: none;
+  font-weight: 800;
+  color: var(--dark);
+  background: #fffdf7;
+  transition: 0.2s ease;
+}
+
+.auth-card input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.18);
+  background: var(--white);
+}
+
+.auth-card input:-webkit-autofill,
+.auth-card input:-webkit-autofill:hover,
+.auth-card input:-webkit-autofill:focus,
+.auth-card input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 40px #fffdf7 inset !important;
+  -webkit-text-fill-color: var(--dark) !important;
+  caret-color: var(--dark);
+}
+
+.auth-card .primary-btn {
+  margin-top: 18px;
+  height: 50px;
+  border-radius: 16px;
+  font-size: 15px;
+}
+
+.auth-error {
+  background: #ffebee;
+  color: var(--danger);
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  border: 1px solid #ffcdd2;
+}
